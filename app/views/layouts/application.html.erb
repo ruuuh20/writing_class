@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WritingClass</title>
+    <title><%= full_title(yield(:title)) %> | Peak English Class</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!--[if lt IE 9]>
+   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+   <![endif]-->
+
   </head>
 
   <body>
-    <%= yield %>
+   <%= render 'layouts/header' %>
+      <div class="container">
+        <%= yield %>
+      </div>
   </body>
 </html>
