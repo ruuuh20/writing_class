@@ -63,6 +63,7 @@ end
         flash[:danger] = "Password reset has expired."
         redirect_to new_password_reset_url
       end
+    end
 
 
 end
