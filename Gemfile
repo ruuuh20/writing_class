@@ -34,6 +34,9 @@ gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'jquery-rails'
 gem 'faker'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 
